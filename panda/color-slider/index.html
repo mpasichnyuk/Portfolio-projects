@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla color picker by Mikhail Pasichniuk</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div>
+        <span>Выберите цвет</span>
+        <button id="btn_text_color" class="btn_text_color">Основного текста</button>
+        <button id="btn_bg_color" class="btn_bg_color">Заднего фона</button>
+    </div>
+    <hr>
+   
+
+    <div class="container">
+        <div class="sliders">
+            <div class="slider red">
+                <p> Красный </p>
+                <input type="range" id="rangeRed" value="4" min="0" max="255">
+            </div>
+            <div class="slider green">
+                <p> Зеленый </p>
+                <input type="range" id="rangeGreen" value="139" min="0" max="255">
+            </div>
+            <div class="slider blue">
+                <p> Синий </p>
+                <input type="range" id="rangeBlue" value="169" min="0" max="255">
+            </div>
+        </div>
+
+        <div id="main-bg">
+            <p class="main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam error libero tempora, aliquid quas doloribus necessitatibus et, est enim dolore, praesentium totam eveniet! Tenetur velit deserunt distinctio ut pariatur itaque, ducimus corporis dolores assumenda, minus aperiam quam iusto dicta beatae provident mollitia. Voluptatum nisi expedita repellendus amet vel cupiditate unde.</p>
+        </div>
+        
+    </div>
+
+    <div>
+        <p id="textColor"></p>
+        <p id="backgroundColor"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,73 +1,89 @@
 * {
-  font-family: "Source Sans Pro", sans-serif;
-  box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .intro {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .text__wrapper {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .section__title {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 hr {
-  margin: 0;
+    margin: 0;
 }
 
 .aboutme {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutme p {
-  display: inline-block;
-  /* background-color: aqua; */
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  color: rgb(47, 47, 47);
+    display: inline-block;
+    /* background-color: aqua; */
+    background: linear-gradient(to right top, #d4f5ef, #6cdbeb);
+    color: rgb(47, 47, 47);
 
-  border-radius: 15px;
-  text-align: center;
-  padding: 2em 2em;
-  width: 50vw;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2em 2em;
+    width: 70vw;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .myworks {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .section__subtitle {
-  margin: 1rem 0;
-  padding: 0;
-  font-size: 1rem;
-  background-color: #128d26;
-  color: aliceblue;
-  padding: 3px 10px;
-  display: inline-block;
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 1rem;
+    background-color: #128d26;
+    color: aliceblue;
+    padding: 3px 10px;
+    display: inline-block;
 }
 
 .intro__img {
-  width: 200px;
-  height: 100%;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  margin-right: 1rem;
+    width: 200px;
+    height: 100%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    margin-right: 1rem;
 }
 
 .card__wrapper {
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-  grid-gap: 2rem;
-  justify-content: center;
-  /* background: linear-gradient(
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    grid-gap: 2rem;
+    justify-content: center;
+    /* background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
@@ -75,84 +91,102 @@ hr {
 }
 
 .card {
-  overflow: hidden;
-  box-shadow: 0px 2px 20px rgb(76, 133, 255);
-  border-radius: 10px;
-  /* border: 1px solid rgb(122, 161, 250); */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px rgb(76, 133, 255);
+    border-radius: 10px;
+    /* border: 1px solid rgb(122, 161, 250); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  transition: transform 200ms ease-in;
+    transition: transform 200ms ease-in;
 }
 
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .card__tools {
-  padding: 0 1rem;
-  font-weight: bold;
-  color: #bb1eeb;
-  /* margin: 16px 16px; */
+    padding: 0 1rem;
+    font-weight: bold;
+    color: #bb1eeb;
+    /* margin: 16px 16px; */
 }
 
 .card__image {
-  height: 12rem;
-  width: 100%;
-  object-fit: cover;
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card__title {
-  padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 .card__description {
-  padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 .card__btn {
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
-  padding: 0.4rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 16px 16px;
-  border: 2px solid #2596be;
-  background: #2596be;
-  /* color: #2596be; */
-  color: azure;
-  border-radius: 12px;
-  transition: 0.2s ease;
-  background: transparent;
-  cursor: pointer;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 16px 16px;
+    border: 2px solid #2596be;
+    background-color: #2596be;
+    /* color: #2596be; */
+    color: white;
+    border-radius: 12px;
+    transition: 0.2s ease;
+    /* background: transparent; */
+    cursor: pointer;
+}
+
+.project__btn {
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 16px 16px;
+    border: 2px solid #2596be;
+    background-color: #2596be;
+    /* color: #2596be; */
+    color: white;
+    border-radius: 12px;
+    transition: 0.2s ease;
+    /* background: transparent; */
+    cursor: pointer;
 }
 
 .card__btn:hover {
-  color: white;
-  background: #f31936;
+    color: white;
+    background: #f31936;
+    border: 2px solid #f31936;
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacts {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .contact {
-  font-size: 5rem;
-  color: rgb(36, 159, 241);
-  transition: all 0.2s ease-in-out;
+    font-size: 5rem;
+    color: rgb(36, 159, 241);
+    transition: all 0.2s ease-in-out;
 }
 
 .contact:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
