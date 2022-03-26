@@ -21,7 +21,7 @@ class App extends React.Component {
   renderProblem() {
     return (
       <div>
-        <h1> Угадай число!</h1>
+        <h1> Guess the number!</h1>
         <h1 className={this.state.incorrect ? "incorrect" : ""}>
           {" "}
           {this.state.num1} + {this.state.num2}{" "}
@@ -32,15 +32,15 @@ class App extends React.Component {
           value={this.state.response}
           type="text"
         />
-        <h4> Ваш ответ: {this.state.response}</h4>
+        <h4> Your answer: {this.state.response}</h4>
 
-        <div>Очки: {this.state.score}</div>
+        <div>Score: {this.state.score}</div>
       </div>
     );
   }
 
   renderWin() {
-    return <h1>Победа!</h1>;
+    return <h1>Victory!</h1>;
   }
 
   updateResponse = (event) => {

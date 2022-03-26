@@ -10,8 +10,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1> Список задач</h1>
-        <h2>Текущие задачи: {this.state.tasks.length}</h2>
+        <h1>Todo App</h1>
+        <h2>List of todos: {this.state.tasks.length}</h2>
         <ul>
           {this.state.tasks.map((task, i) => (
             <li key={i}>
@@ -25,7 +25,7 @@ class App extends React.Component {
           value={this.state.input}
           type="text"
         />
-        <button onClick={this.addTask}>Добавить задачу</button>
+        <button onClick={this.addTask}>Add task</button>
       </div>
     );
   }

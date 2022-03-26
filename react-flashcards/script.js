@@ -77,13 +77,13 @@ class CardEditor extends React.Component {
 
     return (
       <div>
-        <h2>Редактор карточек</h2>
+        <h2>Card editor</h2>
         <table>
           <thead>
             <tr>
-              <th>Лицевая сторона</th>
-              <th>Обратная сторона</th>
-              <th>удалить</th>
+              <th>Front side</th>
+              <th>Back side</th>
+              <th>delete</th>
             </tr>
           </thead>
 
@@ -94,7 +94,7 @@ class CardEditor extends React.Component {
           onChange={this.handleChange}
           type="text"
           name="front"
-          placeholder="иностранный текст"
+          placeholder="foreign languageт"
           value={this.state.front}
         />
 
@@ -102,12 +102,12 @@ class CardEditor extends React.Component {
           onChange={this.handleChange}
           type="text"
           name="back"
-          placeholder="перевод"
+          placeholder="translation"
           value={this.state.back}
         />
-        <button onClick={this.addCard}>добавить карточку</button>
+        <button onClick={this.addCard}>Add card</button>
         <hr />
-        <button onClick={this.props.switchMode}>Начать тренировку</button>
+        <button onClick={this.props.switchMode}>Begin training</button>
       </div>
     );
   }
@@ -172,15 +172,15 @@ class CardViewer extends React.Component {
     let cards = this.props.cards
     return (
       <div>
-        <h3>Тренировка!</h3>
+        <h3>Now training!</h3>
         <h1>{this.state.frontSide ? cards[index].front : cards[index].back}</h1>
-        <button onClick={this.decrement}>Назад</button>
-        <button onClick={this.cardTurn} >Перевод</button>
-        <button onClick={this.increment}>Далее</button>
+        <button onClick={this.decrement}>Previous</button>
+        <button onClick={this.cardTurn} >Translation</button>
+        <button onClick={this.increment}>Next</button>
 
 
         <hr />
-        <button onClick={this.props.switchMode}>перейти в редактор</button>
+        <button onClick={this.props.switchMode}>Go to editor</button>
       </div>
     );
   }
