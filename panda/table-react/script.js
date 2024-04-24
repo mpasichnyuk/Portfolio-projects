@@ -1,5 +1,3 @@
-import { mainData } from "./DATA";
-
 class SearchApp extends React.Component {
   constructor(props) {
     super(props);
