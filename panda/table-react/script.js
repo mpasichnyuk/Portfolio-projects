@@ -200,9 +200,7 @@ class TableRow extends React.Component {
   }
 }
 
-ReactDOM.render(<SearchApp data={mainData} />, document.getElementById("app"));
-
-var mainData = [
+const mainData = [
   {
     id: 1,
     first_name: "Priscella",
@@ -1604,3 +1602,5 @@ var mainData = [
     phone: "8374653222",
   },
 ];
+
+ReactDOM.render(<SearchApp data={mainData} />, document.getElementById("app"));
